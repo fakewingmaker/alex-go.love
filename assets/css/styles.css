@@ -1,23 +1,72 @@
 @font-face {
-    font-family: AlteHaasGrotesk;
-    src: url(AlteHaasGrotesk.woff);
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-60.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-90.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-130.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-150.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-Condensed-60.woff);
+    font-weight: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-Condensed-90.woff);
+    font-weight: 300;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-Condensed-130.woff);
+    font-weight: 500;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: authentic sans;
+    src: url(./fonts/authenticsans-Condensed-150.woff);
+    font-weight: bold;
+    font-stretch: condensed;
 }
 
 body {
-    font-style: normal;
+    font-style: ;
 }
 
 .menu-item {
     display: inline-block;
     text-transform: Capitalize;
-    border: 1px solid black;
-    border-radius: 50%;
+    border-style: none none solid none;
+    border-width: .125rem;
+    border-color: lightslategray;
+    border-radius: 25%;
     text-align: center;
     text-decoration: none;
-    height: 20vw;
-    width: 20vw;
-    line-height: 19vw;
-    font-size: .75em;
+    height: 2.5vw;
+    width: 7.5vw;
+    line-height: 2.75vw;
+    font-size: 1.5em;
     margin: 0.25em;
 }
 
@@ -27,4 +76,7 @@ nav {
     flex-direction: row;
     /* align-items: center; */
     justify-content: center;
+    font-family: 'authentic sans';
+    font-weight: 500;
+    font-stretch: condensed;
 }
