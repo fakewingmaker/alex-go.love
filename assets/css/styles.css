@@ -54,6 +54,17 @@ body {
     font-style: ;
 }
 
+nav {
+    padding: 1em 0 0 0;
+        display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: 'authentic sans';
+    font-weight: 500;
+    font-stretch: condensed;
+}
+
 .menu-item {
     display: inline-block;
     text-transform: Capitalize;
@@ -66,17 +77,6 @@ body {
     height: 2.5vw;
     width: 7.5vw;
     line-height: 2.75vw;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     margin: 0.25em;
-}
-
-nav {
-    padding: 1em 0 0 0;
-        display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
-    font-family: 'authentic sans';
-    font-weight: 500;
-    font-stretch: condensed;
 }
