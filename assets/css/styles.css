@@ -1,57 +1,66 @@
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans 60;
     src: url(./fonts/authenticsans-60.woff);
     font-weight: normal;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans 90;
     src: url(./fonts/authenticsans-90.woff);
     font-weight: 300;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans 130;
     src: url(./fonts/authenticsans-130.woff);
     font-weight: 500;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans 150;
     src: url(./fonts/authenticsans-150.woff);
     font-weight: bold;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans condensed 60;
     src: url(./fonts/authenticsans-Condensed-60.woff);
     font-weight: normal;
     font-stretch: condensed;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans condensed 90;
     src: url(./fonts/authenticsans-Condensed-90.woff);
     font-weight: 300;
     font-stretch: condensed;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans condensed 130;
     src: url(./fonts/authenticsans-Condensed-130.woff);
     font-weight: 500;
     font-stretch: condensed;
 }
 
 @font-face {
-    font-family: authentic sans;
+    font-family: authentic sans condensed 150;
     src: url(./fonts/authenticsans-Condensed-150.woff);
     font-weight: bold;
     font-stretch: condensed;
 }
 
 body {
-    font-style: ;
+    align-content: center;
+    background-color: black;
+    font-size: 1.5vw;
+    font-family: 'authentic sans 60', arial, sans-serif;
+    color: aliceblue;
+}
+
+header {
+    color: darkgray;
+
 }
 
 nav {
@@ -61,7 +70,7 @@ nav {
     /* align-items: center; */
     justify-content: center;
     font-family: 'authentic sans';
-    font-weight: 500;
+    font-weight: 300;
     font-stretch: condensed;
 }
 
@@ -79,4 +88,19 @@ nav {
     line-height: 2.75vw;
     font-size: 1.5vw;
     margin: 0.25em;
+}
+
+div{
+    padding: 2vw;
+    text-align: center;
+}
+
+a {
+    font-weight: 300;
+    color: darkgray;
+}
+
+a:hover {
+    font-weight: 500;
+    color: chocolate;
 }
