@@ -79,6 +79,17 @@ body, html {
 
 header {
     color: darkgray;
+    font-family: 'authentic sans 90', arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+a:hover{
+    color: crimson;
+    font-size: 1.75vw;
 }
 
 nav {
@@ -109,11 +120,9 @@ div {
     border-color: lightslategray;
     border-radius: 25%;
     text-align: center;
-    text-decoration: none;
     height: 2.5vw;
     width: 7.5vw;
     line-height: 2.75vw;
-    font-size: 1.5vw;
     margin: 0.25em;
 }
 
