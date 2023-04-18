@@ -52,17 +52,18 @@
 
 @font-face {
     font-family: MissFajardose-Regular;
-    src: url(./fonts/MissFajardose-Regular.ttf);
+    src: url(MissFajardose-Regular.ttf) format("truetype");
 }
 
 @font-face {
     font-family: PPEditorialNew Thin Italic;
-    src: url(./fonts/PPEditorialNew-ThinItalic.otf);
+    src: url(PPEditorialNew-ThinItalic.woff);
 }
 
 @font-face {
     font-family: PPEditorialNew Thin;
-    src: url(./fonts/PPEditorialNew-Thin.otf);
+    src: url(PPEditorialNew-Thin.woff);
+    font-style: italic;
 }
 
 body, html {
@@ -72,35 +73,32 @@ body, html {
     height: 100%;
     align-content: center;
     background-color: black;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family: 'authentic sans 60', arial, sans-serif;
-    color: aliceblue;
+    color: grey;
+    text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(255, 255, 255, 0.8);
 }
 
-header {
+/* header {
     color: darkgray;
     font-family: 'authentic sans 90', arial, sans-serif;
-}
+} */
 
 a {
     text-decoration: none;
-    color: darkgrey;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 a:hover{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-color: crimson;
     color: crimson;
-    font-size: 1.75vw;
-}
-
-nav {
-    padding: 1em 0 0 0;
-        display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
-    font-family: 'authentic sans';
-    font-weight: 300;
-    font-stretch: condensed;
+    font-size: 3vw;
 }
 
 div {
@@ -110,27 +108,65 @@ div {
     text-align: center;
     background-color: black;
     color: aliceblue;
+    line-height: 2vw;
 }
 
-.menu-item {
-    display: inline-block;
-    text-transform: Capitalize;
-    border-style: none none solid none;
-    border-width: .125rem;
-    border-color: lightslategray;
-    border-radius: 25%;
-    text-align: center;
-    height: 2.5vw;
-    width: 7.5vw;
-    line-height: 2.75vw;
-    margin: 0.25em;
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+.box{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.card {
+    display: inline-grid;
+    width: 45vw;
+    height: 100%;
+    box-shadow: 0px 0 20px 0 whitesmoke;
 }
 
 .logo {
+    justify-content: center;
     width: 5vw;
 }
 
-#cover {
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: black;
+}
+
+#video-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+source {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* #cover {
     position: fixed;
     top: 0;
     left: 0;
@@ -153,8 +189,31 @@ div {
 #content {
     padding: 20px;
     display: none;
+} */
+
+#s-font {
+    font-family: MissFajardose-Regular;
 }
 
 #font {
-    font-family: PPEditorialNew Thin Italic;
+    font-family: 'PPEditorialNew Thin Italic', garamond, serif;
+    font-style: italic;
 }
+
+.container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* #gutter {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 100000;
+} */
+
